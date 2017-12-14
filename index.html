@@ -13,25 +13,29 @@
 
             <h1>Crystals Collector</h1>
 
+  <div class="winsandlosses">
+    <div class="row">
+      <div class="col-xs-6 col-sm-8 col-lg-10">
 
-  <div class="randomnumber">
+        Wins:
+          <span id= "numberWin"></span>
+    </br>
+        Losses:
+          <span id= "numberLose"></span>
+
+    </div>
+  </div>
 </div>
 
-
-
-<div class="total-header">
-
-
-      <h4>Your Total Score Is:</h4>
-
-</div>
-
-<div class="total-score">
-
-</div>
 
 
 <div class="directions">
+    <div class="row">
+      <div class="col-xs-6 col-sm-8 col-lg-10">
+
+        <h2>Instructions</h2>
+
+<br>
 
       <ul>
       You will be given a random number at the start of the game.
@@ -58,38 +62,69 @@
       Each game start, the values of the crystals will change.
       </ul>
 
+    </div>
+  </div>
 </div>
 
 
+<br>
+<br>
 
-      <!-- Wins and Loses (DIV) - set to zero when page is refreshed  -->
-<div class="wins-loses">
+<div class="randomnumber">
+  <div id="randomNumber">
+    <div class="col-xs-6 col-sm-8 col-lg-10">
 
-
-          <p>
-            Wins:
-          </p>
-
-          <p>
-            Losses:
-          </p>
-
+    </div>
+  </div>
 </div>
 
-      <!-- 4 Crystal DIVs - clickable and increase of decrease amount (change to different picture) -->
+
+<div class="total-header">
+  <div class="row">
+    <div class="col-xs-6 col-sm-8 col-lg-10">
+
+
+
+        </div>
+    </div>
+</div>
+
+<div class="totalScore">
+    <div class="row">
+      <div class="col-xs-6 col-sm-8 col-lg-10">
+
+            <h4>Your Total Score Is:
+              <br><br>
+            <span id= "finalTotal"></span>
+            </h4>
+
+
+    </div>
+  </div>
+</div>
+
+<br>
+
 <div class="images">
+  <div class="row">
+    <div class="col-xs-6 col-sm-8 col-lg-10">
 
 
-        <img src="assets/images/emerald.png" alt="Emerald">
 
-        <img src="assets/images/ruby.png" alt="Ruby">
+        <img id=emerald src="assets/images/emerald.png" alt="Emerald">
 
-        <img src="assets/images/purple.png" alt="Purple">
+        <img id=ruby src="assets/images/ruby.png" alt="Ruby">
 
-        <img src="assets/images/yellow.png" alt="Yellow">
+        <img id=purple src="assets/images/purple.png" alt="Purple">
 
+        <img id=yellow src="assets/images/yellow.png" alt="Yellow">
+
+        </div>
+    </div>
 </div>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
   </body>
 </html>
